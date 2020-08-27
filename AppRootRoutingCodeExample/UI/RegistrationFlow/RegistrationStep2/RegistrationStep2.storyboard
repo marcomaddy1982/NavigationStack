@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zxz-oX-aMk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration Step2 View Controller-->
+        <scene sceneID="E6L-va-z0c">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationStep2" id="Zxz-oX-aMk" customClass="RegistrationStep2ViewController" customModule="AppRootRoutingCodeExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xma-44-T2H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxv-0O-ILX">
+                                <rect key="frame" x="141.5" y="433" width="131" height="30"/>
+                                <state key="normal" title="Registration Step 3"/>
+                                <connections>
+                                    <action selector="registrationStep3ButtonTouchUpInside:" destination="Zxz-oX-aMk" eventType="touchUpInside" id="03M-e2-kZ1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gxv-0O-ILX" firstAttribute="centerX" secondItem="Xma-44-T2H" secondAttribute="centerX" id="6vd-ST-xRV"/>
+                            <constraint firstItem="gxv-0O-ILX" firstAttribute="centerY" secondItem="Xma-44-T2H" secondAttribute="centerY" id="AyN-Ez-4ge"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UN8-c2-SaK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQN-Vx-JuF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="104"/>
+        </scene>
+    </scenes>
+</document>

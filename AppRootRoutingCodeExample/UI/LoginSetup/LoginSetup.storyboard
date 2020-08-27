@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="68x-au-oNQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Setup View Controller-->
+        <scene sceneID="RJF-FB-6RD">
+            <objects>
+                <viewController storyboardIdentifier="LoginSetup" id="68x-au-oNQ" customClass="LoginSetupViewController" customModule="AppRootRoutingCodeExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tpj-hg-h81">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5q-KD-CuC">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUL-ij-ona">
+                                        <rect key="frame" x="20" y="40" width="260" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="egN-GF-R0r"/>
+                                        </constraints>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="loginButtonTouchUpInside:" destination="68x-au-oNQ" eventType="touchUpInside" id="Gkm-w5-Cdg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbu-90-0eI">
+                                        <rect key="frame" x="20" y="210" width="260" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6Do-hS-Iu4"/>
+                                        </constraints>
+                                        <state key="normal" title="Registration"/>
+                                        <connections>
+                                            <action selector="registrationButtonTouchUpInside:" destination="68x-au-oNQ" eventType="touchUpInside" id="XHf-tn-eeX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="3hN-Uc-1eM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wbu-90-0eI" secondAttribute="trailing" constant="20" id="Lil-1K-MVZ"/>
+                                    <constraint firstItem="MUL-ij-ona" firstAttribute="leading" secondItem="H5q-KD-CuC" secondAttribute="leading" constant="20" id="MrA-6a-NJq"/>
+                                    <constraint firstItem="MUL-ij-ona" firstAttribute="top" secondItem="H5q-KD-CuC" secondAttribute="top" constant="40" id="bV3-Jh-qoM"/>
+                                    <constraint firstItem="Wbu-90-0eI" firstAttribute="leading" secondItem="H5q-KD-CuC" secondAttribute="leading" constant="20" id="d19-ra-mQK"/>
+                                    <constraint firstAttribute="trailing" secondItem="MUL-ij-ona" secondAttribute="trailing" constant="20" id="lp8-Ii-FaD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wbu-90-0eI" secondAttribute="bottom" constant="40" id="ocb-6b-2wx"/>
+                                    <constraint firstAttribute="width" constant="300" id="t3C-P9-ZY8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H5q-KD-CuC" firstAttribute="centerX" secondItem="tpj-hg-h81" secondAttribute="centerX" id="Iqm-xe-iPx"/>
+                            <constraint firstItem="H5q-KD-CuC" firstAttribute="centerY" secondItem="tpj-hg-h81" secondAttribute="centerY" id="nJi-FJ-udU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ar7-yB-cUm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqz-ex-7rp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="-80"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K3j-AU-FXr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration Step3 View Controller-->
+        <scene sceneID="DQB-oh-gAL">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationStep3" id="K3j-AU-FXr" customClass="RegistrationStep3ViewController" customModule="AppRootRoutingCodeExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ods-Hf-wNu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn9-dQ-2Du" userLabel="Finish Registration">
+                                <rect key="frame" x="143.5" y="433" width="127" height="30"/>
+                                <state key="normal" title="Finish Registration"/>
+                                <connections>
+                                    <action selector="finishRegistrationButtonTouchUpInside:" destination="K3j-AU-FXr" eventType="touchUpInside" id="JyU-Nk-h8E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dn9-dQ-2Du" firstAttribute="centerX" secondItem="Ods-Hf-wNu" secondAttribute="centerX" id="GaA-St-VjH"/>
+                            <constraint firstItem="dn9-dQ-2Du" firstAttribute="centerY" secondItem="Ods-Hf-wNu" secondAttribute="centerY" id="Ph3-tv-66W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GCm-EY-nKV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gD5-De-A8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-597" y="-46"/>
+        </scene>
+    </scenes>
+</document>

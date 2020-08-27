@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="juC-Ll-SBq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="dIi-qQ-7MJ">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="juC-Ll-SBq" customClass="LoginViewController" customModule="AppRootRoutingCodeExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KIt-ap-8fg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1E-nc-VI4">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6a-qO-UX4">
+                                        <rect key="frame" x="20" y="40" width="260" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KnY-RP-qEw"/>
+                                        </constraints>
+                                        <state key="normal" title="LogIn Success"/>
+                                        <connections>
+                                            <action selector="loginSuccessButtonTouchUpInside:" destination="juC-Ll-SBq" eventType="touchUpInside" id="X5g-CM-TVg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaV-Lx-UDU">
+                                        <rect key="frame" x="20" y="210" width="260" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="f4f-hO-nAZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Login Error"/>
+                                        <connections>
+                                            <action selector="loginErrorButtonTouchUpInside:" destination="juC-Ll-SBq" eventType="touchUpInside" id="w2v-Te-hEb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0ql-Om-Zey"/>
+                                    <constraint firstItem="X6a-qO-UX4" firstAttribute="leading" secondItem="A1E-nc-VI4" secondAttribute="leading" constant="20" id="3Po-NQ-r5s"/>
+                                    <constraint firstItem="HaV-Lx-UDU" firstAttribute="leading" secondItem="A1E-nc-VI4" secondAttribute="leading" constant="20" id="43A-wv-7SG"/>
+                                    <constraint firstAttribute="bottom" secondItem="HaV-Lx-UDU" secondAttribute="bottom" constant="40" id="Cqr-4v-lQQ"/>
+                                    <constraint firstAttribute="height" constant="300" id="Jnx-IY-Chv"/>
+                                    <constraint firstItem="X6a-qO-UX4" firstAttribute="top" secondItem="A1E-nc-VI4" secondAttribute="top" constant="40" id="SS1-Rq-Gxm"/>
+                                    <constraint firstAttribute="trailing" secondItem="HaV-Lx-UDU" secondAttribute="trailing" constant="20" id="u0q-3T-UdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="X6a-qO-UX4" secondAttribute="trailing" constant="20" id="wnR-ix-ozI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="A1E-nc-VI4" firstAttribute="centerX" secondItem="KIt-ap-8fg" secondAttribute="centerX" id="CX1-3E-Btm"/>
+                            <constraint firstItem="A1E-nc-VI4" firstAttribute="centerY" secondItem="KIt-ap-8fg" secondAttribute="centerY" id="npT-Rm-Xjw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uv5-zq-ryS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Eq-6k-WQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="-80"/>
+        </scene>
+    </scenes>
+</document>
