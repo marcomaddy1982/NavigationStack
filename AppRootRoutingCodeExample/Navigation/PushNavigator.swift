@@ -52,17 +52,24 @@ public class PushNavigator {
         var mutablePresented = presented
         let next = mutablePresented.remove(at: 0)
 
-        present(next, on: presenting, animated: mutablePresented.isEmpty) { self.present(presented: mutablePresented, on: next) }
+        present(next, on: presenting, animated: mutablePresented.isEmpty) {
+            self.present(presented: mutablePresented, on: next)
+        }
     }
 
-    private func present(_ presented: UIViewController, on viewController: UIViewController, animated: Bool, completion: @escaping () -> Void) {
+    private func present(_ presented: UIViewController,
+                         on viewController: UIViewController,
+                         animated: Bool,
+                         completion: @escaping () -> Void) {
         guard viewController.presentedViewController !== presented else {
             completion()
             return
         }
 
         if viewController.presentedViewController != nil {
-            viewController.dismiss(animated: false) { viewController.present(presented, animated: animated, completion: completion) }
+            viewController.dismiss(animated: false) {
+                viewController.present(presented, animated: animated, completion: completion)
+            }
         } else {
             viewController.present(presented, animated: animated, completion: completion)
         }

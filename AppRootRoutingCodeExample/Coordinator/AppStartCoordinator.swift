@@ -11,6 +11,7 @@ import UIKit
 final class AppStartCoordinator: Coordinatable {
     private var loginRouter: LoginRouter?
     private var registrationRouter: RegistrationStep1Router?
+    private let appRouter: AppRouter = AppRouter()
     
     let navigator: NavigatorProtocol
     var rootViewController: UIViewController { navigator.navigationController }
@@ -24,11 +25,15 @@ final class AppStartCoordinator: Coordinatable {
         let loadingViewController = LoadingViewController.build(delegate: self)
         navigator.root(loadingViewController, animated: animated)
         
-//        observeNavigationNotifications()
+        observeNavigationNotifications()
+    }
+    
+    func showTabbar() {
+        appRouter.start(navigator: navigator, animated: true)
     }
     
     deinit {
-//        removeObserveNavigationNotifications()
+        removeObserveNavigationNotifications()
     }
 }
 
@@ -73,24 +78,27 @@ extension AppStartCoordinator {
     private func presentNewScreen() {
         let pushNavigator = PushNavigator(navigationController: navigator.navigationController)
         pushNavigator.presentingViewController = rootViewController
+        
         let viewController = UIViewController()
         viewController.view.frame = UIScreen.main.bounds
         viewController.view.backgroundColor = .red
-        
-//        let viewController1 = UIViewController()
-//        viewController1.view.frame = UIScreen.main.bounds
-//        viewController1.view.backgroundColor = .blue
-        
-//        let stackControllers = navigator.navigationController.viewControllers + [viewController]
 
         let navigationStack = NavigationStack(presented: [viewController])
-//        let navigationStack = NavigationStack(presented: [viewController, viewController1])
         pushNavigator.show(navigationStack: navigationStack)
     }
 }
 
 extension AppStartCoordinator: LoadingDelegate {
-    func showLoginSetup(sender: LoadingViewController) {
+    func showContent(sender: LoadingViewController, appState: AppState) {
+        switch appState {
+        case .unauthorized:
+            showLoginSetup()
+        case .authorized:
+            showTabbar()
+        }
+    }
+    
+    private func showLoginSetup() {
         let pushNavigator = PushNavigator(navigationController: navigator.navigationController)
         let loginSetupViewController = LoginSetupViewController.build(delegate: self)
         let navigationStack = NavigationStack(pushed: [loginSetupViewController])

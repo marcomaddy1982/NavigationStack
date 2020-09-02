@@ -2,7 +2,7 @@
 //  LoginSetupViewController.swift
 //  AppRootRoutingCodeExample
 //
-//  Created by Marco Maddalena on 26/08/2020.
+//  Created by Marco Maddalena on 26.08.2020.
 //  Copyright © 2020 Wire. All rights reserved.
 //
 
@@ -27,7 +27,7 @@ class LoginSetupViewController: UIViewController {
         delegate?.showLogin(sender: self)
         
 //        NotificationDispatcher.shared.dispatchPushScreenNotification()
-        NotificationDispatcher.shared.dispatchPresentScreenNotification()
+//        NotificationDispatcher.shared.dispatchPresentScreenNotification()
     }
     
     @IBAction private func registrationButtonTouchUpInside(_ sender: Any) {

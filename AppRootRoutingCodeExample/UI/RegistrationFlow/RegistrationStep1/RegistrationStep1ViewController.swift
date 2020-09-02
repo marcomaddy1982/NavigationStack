@@ -2,7 +2,7 @@
 //  RegistrationStep1ViewController.swift
 //  AppRootRoutingCodeExample
 //
-//  Created by Marco Maddalena on 26/08/2020.
+//  Created by Marco Maddalena on 26.08.2020.
 //  Copyright © 2020 Wire. All rights reserved.
 //
 

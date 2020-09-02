@@ -2,7 +2,7 @@
 //  RemoveDeviceRouter.swift
 //  AppRootRoutingCodeExample
 //
-//  Created by Marco Maddalena on 26/08/2020.
+//  Created by Marco Maddalena on 26.08.2020.
 //  Copyright © 2020 Wire. All rights reserved.
 //
 
@@ -27,10 +27,17 @@ class RemoveDeviceRouter {
 
 extension RemoveDeviceRouter: RemoveDeviceDelegate {
     func showTabbar(sender: RemoveDeviceViewController) {
+        let scene = UIApplication.shared.connectedScenes.first
+        guard
+            let sceneDelegate: SceneDelegate = (scene?.delegate as? SceneDelegate),
+            let appStartCoordinator = sceneDelegate.appStartCoordinator
+        else {
+            return
+        }
         
+        appStartCoordinator.showTabbar()
     }
 }
-
 
 struct RemoveDeviceWireFrame {
     func build(delegate: RemoveDeviceDelegate) -> RemoveDeviceViewController {

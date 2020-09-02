@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54637C8924FCE8AC00164338 /* TabBarNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637C8824FCE8AC00164338 /* TabBarNavigator.swift */; };
+		54637C8B24FE277E00164338 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637C8A24FE277E00164338 /* TabBarCoordinator.swift */; };
+		54637C8E24FE280500164338 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637C8D24FE280500164338 /* TabBarController.swift */; };
+		54637C9124FE2A3800164338 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637C9024FE2A3800164338 /* AppRouter.swift */; };
+		54637C9324FF8AA900164338 /* ModuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637C9224FF8AA900164338 /* ModuleProtocol.swift */; };
+		54637C9624FF8C3D00164338 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637C9524FF8C3D00164338 /* SearchRouter.swift */; };
+		54637C9924FF908000164338 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54637C9824FF908000164338 /* Search.storyboard */; };
+		54637C9B24FF90F400164338 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637C9A24FF90F400164338 /* SearchViewController.swift */; };
+		54637C9F24FFA12F00164338 /* ConversationList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54637C9E24FFA12F00164338 /* ConversationList.storyboard */; };
+		54637CA124FFA15300164338 /* ConversationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637CA024FFA15300164338 /* ConversationRouter.swift */; };
+		54637CA324FFA23600164338 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637CA224FFA23600164338 /* ConversationListViewController.swift */; };
+		54637CA624FFA55600164338 /* FolderList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54637CA524FFA55600164338 /* FolderList.storyboard */; };
+		54637CA824FFA58800164338 /* FolderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637CA724FFA58800164338 /* FolderRouter.swift */; };
+		54637CAA24FFA5BE00164338 /* FolderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637CA924FFA5BE00164338 /* FolderListViewController.swift */; };
+		54637CAD24FFA71200164338 /* ArchiveList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54637CAC24FFA71200164338 /* ArchiveList.storyboard */; };
+		54637CAF24FFA71F00164338 /* ArchiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637CAE24FFA71F00164338 /* ArchiveListViewController.swift */; };
+		54637CB124FFA81800164338 /* ArchiveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637CB024FFA81800164338 /* ArchiveRouter.swift */; };
+		54637CB324FFA9F500164338 /* CompositeNavigationBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54637CB224FFA9F500164338 /* CompositeNavigationBehavior.swift */; };
 		54AA3CFA24F64D0800FE1F94 /* UIStoryboard+Typed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA3CF824F64D0700FE1F94 /* UIStoryboard+Typed.swift */; };
 		54AA3CFB24F64D0800FE1F94 /* UIView+Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA3CF924F64D0800FE1F94 /* UIView+Embed.swift */; };
 		54AA3CFD24F652F300FE1F94 /* LoginSetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AA3CFC24F652F300FE1F94 /* LoginSetup.storyboard */; };
@@ -46,6 +64,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54637C8824FCE8AC00164338 /* TabBarNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarNavigator.swift; sourceTree = "<group>"; };
+		54637C8A24FE277E00164338 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		54637C8D24FE280500164338 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		54637C9024FE2A3800164338 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		54637C9224FF8AA900164338 /* ModuleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleProtocol.swift; sourceTree = "<group>"; };
+		54637C9524FF8C3D00164338 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		54637C9824FF908000164338 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		54637C9A24FF90F400164338 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		54637C9E24FFA12F00164338 /* ConversationList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConversationList.storyboard; sourceTree = "<group>"; };
+		54637CA024FFA15300164338 /* ConversationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRouter.swift; sourceTree = "<group>"; };
+		54637CA224FFA23600164338 /* ConversationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		54637CA524FFA55600164338 /* FolderList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FolderList.storyboard; sourceTree = "<group>"; };
+		54637CA724FFA58800164338 /* FolderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderRouter.swift; sourceTree = "<group>"; };
+		54637CA924FFA5BE00164338 /* FolderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListViewController.swift; sourceTree = "<group>"; };
+		54637CAC24FFA71200164338 /* ArchiveList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArchiveList.storyboard; sourceTree = "<group>"; };
+		54637CAE24FFA71F00164338 /* ArchiveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveListViewController.swift; sourceTree = "<group>"; };
+		54637CB024FFA81800164338 /* ArchiveRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveRouter.swift; sourceTree = "<group>"; };
+		54637CB224FFA9F500164338 /* CompositeNavigationBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeNavigationBehavior.swift; sourceTree = "<group>"; };
 		54AA3CF824F64D0700FE1F94 /* UIStoryboard+Typed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Typed.swift"; sourceTree = "<group>"; };
 		54AA3CF924F64D0800FE1F94 /* UIView+Embed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Embed.swift"; sourceTree = "<group>"; };
 		54AA3CFC24F652F300FE1F94 /* LoginSetup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSetup.storyboard; sourceTree = "<group>"; };
@@ -97,13 +133,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54637C8F24FE2A1C00164338 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				54637C8D24FE280500164338 /* TabBarController.swift */,
+				54637C9024FE2A3800164338 /* AppRouter.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		54637C9724FF906700164338 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				54637C9824FF908000164338 /* Search.storyboard */,
+				54637C9A24FF90F400164338 /* SearchViewController.swift */,
+				54637C9524FF8C3D00164338 /* SearchRouter.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		54637C9C24FFA0F700164338 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				54637CAB24FFA6D400164338 /* ArchiveList */,
+				54637C9D24FFA10900164338 /* ConversationList */,
+				54637CA424FFA4BF00164338 /* FolderList */,
+				54637C9724FF906700164338 /* Search */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		54637C9D24FFA10900164338 /* ConversationList */ = {
+			isa = PBXGroup;
+			children = (
+				54637C9E24FFA12F00164338 /* ConversationList.storyboard */,
+				54637CA224FFA23600164338 /* ConversationListViewController.swift */,
+				54637CA024FFA15300164338 /* ConversationRouter.swift */,
+			);
+			path = ConversationList;
+			sourceTree = "<group>";
+		};
+		54637CA424FFA4BF00164338 /* FolderList */ = {
+			isa = PBXGroup;
+			children = (
+				54637CA524FFA55600164338 /* FolderList.storyboard */,
+				54637CA724FFA58800164338 /* FolderRouter.swift */,
+				54637CA924FFA5BE00164338 /* FolderListViewController.swift */,
+			);
+			path = FolderList;
+			sourceTree = "<group>";
+		};
+		54637CAB24FFA6D400164338 /* ArchiveList */ = {
+			isa = PBXGroup;
+			children = (
+				54637CAC24FFA71200164338 /* ArchiveList.storyboard */,
+				54637CAE24FFA71F00164338 /* ArchiveListViewController.swift */,
+				54637CB024FFA81800164338 /* ArchiveRouter.swift */,
+			);
+			path = ArchiveList;
+			sourceTree = "<group>";
+		};
 		54AA3CF624F64C8800FE1F94 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				54AA3D1224F6A1D900FE1F94 /* RegistrationFlow */,
-				54AA3D1124F6A1C600FE1F94 /* LoginFlow */,
 				54AA3D0124F66CB600FE1F94 /* Loading */,
+				54AA3D1124F6A1C600FE1F94 /* LoginFlow */,
 				54AA3D0024F66CA400FE1F94 /* LoginSetup */,
+				54AA3D1224F6A1D900FE1F94 /* RegistrationFlow */,
+				54637C9C24FFA0F700164338 /* Tabbar */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -242,6 +339,7 @@
 		76A4E8A324F506E300DE5193 /* AppRootRoutingCodeExample */ = {
 			isa = PBXGroup;
 			children = (
+				54637C8F24FE2A1C00164338 /* App */,
 				54AA3D3624F79F9400FE1F94 /* Notification */,
 				54AA3CF724F64CF900FE1F94 /* Extentions */,
 				54AA3CF624F64C8800FE1F94 /* UI */,
@@ -260,10 +358,13 @@
 		76A4E8B824F506F900DE5193 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				54637C9224FF8AA900164338 /* ModuleProtocol.swift */,
 				76A4E8B924F5070D00DE5193 /* NavigationStack.swift */,
 				76A4E8BB24F50BB200DE5193 /* Navigator.swift */,
 				76A4E8C624F5461F00DE5193 /* NoBackTitleNavigationController.swift */,
 				76A4E8BD24F50BCE00DE5193 /* PushNavigator.swift */,
+				54637C8824FCE8AC00164338 /* TabBarNavigator.swift */,
+				54637CB224FFA9F500164338 /* CompositeNavigationBehavior.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -273,6 +374,7 @@
 			children = (
 				76A4E8C224F5177C00DE5193 /* Coordinator.swift */,
 				76A4E8C024F516EF00DE5193 /* AppStartCoordinator.swift */,
+				54637C8A24FE277E00164338 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -342,7 +444,11 @@
 				54AA3D1524F6A20C00FE1F94 /* RegistrationStep1.storyboard in Resources */,
 				54AA3D2324F6AAEF00FE1F94 /* RegistrationStep3.storyboard in Resources */,
 				54AA3D2A24F6B27800FE1F94 /* Backup.storyboard in Resources */,
+				54637C9924FF908000164338 /* Search.storyboard in Resources */,
+				54637CA624FFA55600164338 /* FolderList.storyboard in Resources */,
 				54AA3D0C24F69AA600FE1F94 /* Login.storyboard in Resources */,
+				54637C9F24FFA12F00164338 /* ConversationList.storyboard in Resources */,
+				54637CAD24FFA71200164338 /* ArchiveList.storyboard in Resources */,
 				54AA3D3124F6B6D100FE1F94 /* RemoveDevice.storyboard in Resources */,
 				54AA3D0724F66D1E00FE1F94 /* Loading.storyboard in Resources */,
 			);
@@ -357,28 +463,42 @@
 			files = (
 				76A4E8C324F5177C00DE5193 /* Coordinator.swift in Sources */,
 				54AA3D1924F6A25300FE1F94 /* RegistrationStep1Router.swift in Sources */,
+				54637CB124FFA81800164338 /* ArchiveRouter.swift in Sources */,
 				76A4E8A924F506E300DE5193 /* ViewController.swift in Sources */,
 				54AA3CFF24F654D700FE1F94 /* LoginSetupViewController.swift in Sources */,
 				54AA3D3524F6B6ED00FE1F94 /* RemoveDeviceRouter.swift in Sources */,
 				54AA3D2E24F6B29100FE1F94 /* BackupRouter.swift in Sources */,
 				54AA3D0E24F69AC500FE1F94 /* LoginViewController.swift in Sources */,
 				76A4E8C724F5461F00DE5193 /* NoBackTitleNavigationController.swift in Sources */,
+				54637C9124FE2A3800164338 /* AppRouter.swift in Sources */,
+				54637CA124FFA15300164338 /* ConversationRouter.swift in Sources */,
 				54AA3D2C24F6B28300FE1F94 /* BackupViewController.swift in Sources */,
 				76A4E8BE24F50BCE00DE5193 /* PushNavigator.swift in Sources */,
+				54637CAA24FFA5BE00164338 /* FolderListViewController.swift in Sources */,
+				54637C8B24FE277E00164338 /* TabBarCoordinator.swift in Sources */,
+				54637C9B24FF90F400164338 /* SearchViewController.swift in Sources */,
+				54637C9624FF8C3D00164338 /* SearchRouter.swift in Sources */,
 				54AA3D1024F69D0400FE1F94 /* LoginRouter.swift in Sources */,
 				76A4E8BC24F50BB200DE5193 /* Navigator.swift in Sources */,
+				54637CA324FFA23600164338 /* ConversationListViewController.swift in Sources */,
 				54AA3CFA24F64D0800FE1F94 /* UIStoryboard+Typed.swift in Sources */,
 				54AA3D2024F6A74C00FE1F94 /* RegistrationStep2Router.swift in Sources */,
 				54AA3D0924F66D2E00FE1F94 /* LoadingViewController.swift in Sources */,
 				54AA3D1E24F6A73800FE1F94 /* RegistrationStep2ViewController.swift in Sources */,
+				54637CA824FFA58800164338 /* FolderRouter.swift in Sources */,
 				54AA3CFB24F64D0800FE1F94 /* UIView+Embed.swift in Sources */,
 				54AA3D3824F79FBE00FE1F94 /* NotificationDispatcher.swift in Sources */,
 				54AA3D1724F6A23500FE1F94 /* RegistrationStep1ViewController.swift in Sources */,
 				54AA3D2724F6AB2300FE1F94 /* RegistrationStep3Router.swift in Sources */,
 				54AA3D2524F6AB1400FE1F94 /* RegistrationStep3ViewController.swift in Sources */,
+				54637C9324FF8AA900164338 /* ModuleProtocol.swift in Sources */,
 				76A4E8A524F506E300DE5193 /* AppDelegate.swift in Sources */,
+				54637C8E24FE280500164338 /* TabBarController.swift in Sources */,
 				54AA3D3324F6B6DD00FE1F94 /* RemoveDeviceViewController.swift in Sources */,
+				54637C8924FCE8AC00164338 /* TabBarNavigator.swift in Sources */,
 				76A4E8C124F516EF00DE5193 /* AppStartCoordinator.swift in Sources */,
+				54637CAF24FFA71F00164338 /* ArchiveListViewController.swift in Sources */,
+				54637CB324FFA9F500164338 /* CompositeNavigationBehavior.swift in Sources */,
 				76A4E8BA24F5070D00DE5193 /* NavigationStack.swift in Sources */,
 				76A4E8A724F506E300DE5193 /* SceneDelegate.swift in Sources */,
 			);

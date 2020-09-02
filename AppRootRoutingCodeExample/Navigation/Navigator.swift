@@ -80,7 +80,8 @@ public class Navigator: NSObject, NavigatorProtocol {
         navigationController.viewControllers = [viewController]
     }
 
-    public func addNavigateBack(closure: @escaping NavigateBackClosure, for viewController: UIViewController) {
+    public func addNavigateBack(closure: @escaping NavigateBackClosure,
+                                for viewController: UIViewController) {
         print("adding closure for \(viewController)")
         closures.updateValue(closure, forKey: viewController)
     }

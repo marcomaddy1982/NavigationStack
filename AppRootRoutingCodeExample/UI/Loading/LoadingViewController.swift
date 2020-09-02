@@ -2,14 +2,19 @@
 //  LoadingViewController.swift
 //  AppRootRoutingCodeExample
 //
-//  Created by Marco Maddalena on 26/08/2020.
+//  Created by Marco Maddalena on 26.08.2020.
 //  Copyright © 2020 Wire. All rights reserved.
 //
 
 import UIKit
 
+enum AppState {
+    case authorized
+    case unauthorized
+}
+
 protocol LoadingDelegate: AnyObject {
-    func showLoginSetup(sender: LoadingViewController)
+    func showContent(sender: LoadingViewController, appState: AppState)
 }
 
 class LoadingViewController: UIViewController {
@@ -20,14 +25,14 @@ class LoadingViewController: UIViewController {
         super.viewDidLoad()
         timer = Timer.scheduledTimer(timeInterval: 5,
                                      target: self,
-                                     selector: #selector(showLoginSetup),
+                                     selector: #selector(showContent),
                                      userInfo: nil,
                                      repeats: false)
     }
     
     @objc
-    private func showLoginSetup() {
-        delegate?.showLoginSetup(sender: self)
+    private func showContent() {
+        delegate?.showContent(sender: self, appState: .authorized)
     }
 }
 

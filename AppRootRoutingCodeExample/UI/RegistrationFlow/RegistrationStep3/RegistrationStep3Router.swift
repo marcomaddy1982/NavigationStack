@@ -2,7 +2,7 @@
 //  RegistrationStep3Router.swift
 //  AppRootRoutingCodeExample
 //
-//  Created by Marco Maddalena on 26/08/2020.
+//  Created by Marco Maddalena on 26.08.2020.
 //  Copyright © 2020 Wire. All rights reserved.
 //
 
@@ -38,7 +38,14 @@ extension RegistrationStep3Router: RegistrationStep3Delegate {
         let pushNavigator = PushNavigator(navigationController: navigator.navigationController)
         let loginSetupViewController = LoginSetupViewController.build(delegate: appStartCoordinator)
         let loginViewController = LoginRouter(navigator: navigator).viewController
+        
+//        pushNavigator.presentingViewController = navigator.navigationController
+//        let viewController = UIViewController()
+//        viewController.view.frame = UIScreen.main.bounds
+//        viewController.view.backgroundColor = .red
+        
         let navigationStack = NavigationStack(pushed: [loginSetupViewController, loginViewController])
+        
         pushNavigator.show(navigationStack: navigationStack)
     }
 }

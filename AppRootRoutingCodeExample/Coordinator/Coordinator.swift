@@ -47,7 +47,9 @@ public extension Coordinatable {
         appendChildCoordinator(childCoordinator)
         childCoordinator.start(animated: animated)
 
-        let addedViewControllers = navigator.navigationController.viewControllers.filter { !viewControllersBeforeStart.contains($0) }
+        let addedViewControllers = navigator.navigationController.viewControllers.filter {
+            !viewControllersBeforeStart.contains($0)
+        }
 
         guard let viewControllerToTrack = addedViewControllers.first else {
             assertionFailure("Unable to setup coordinator cleanup – no view controller got pushed by \(childCoordinator)!")
@@ -57,6 +59,7 @@ public extension Coordinatable {
         print("setting up cleanup for \(childCoordinator) using \(viewControllerToTrack)")
 
         let closure: NavigateBackClosure = { [weak self, weak childCoordinator] in
+            
             guard let childCoordinator = childCoordinator else { return }
 
             print("removing childCoordinator \(childCoordinator)")
